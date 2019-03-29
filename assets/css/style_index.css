@@ -11,7 +11,7 @@
 }
 
 .spacer-section.one {
-  background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('http://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('https://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
 }
 
 .trending-events, .about-us {
@@ -100,7 +100,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .about-us-content {
     width: 80%;
   }

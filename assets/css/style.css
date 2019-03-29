@@ -166,6 +166,10 @@ a.title {
   font-weight: bold;
 }
 
+.navigation-list>.navigation-list-item.active a {
+  border-bottom: 1px solid black;
+}
+
 .navigation-list-item a:hover {
   padding-bottom: 2px;
   transition: 0.25s ease-in;
