@@ -12,6 +12,7 @@
 
     <!-- style -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style_index.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   </head>
@@ -82,7 +83,7 @@
             <div class="event-list">
 
               <!-- event item -->
-              <div class="col-4 event-item">
+              <div class="col-3 event-item">
                 <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
                 <div class="event-item-information-section">
                   <div class="event-item-title-section">Title Example</div>
@@ -93,7 +94,7 @@
               <!-- ! [event item] -->
 
               <!-- event item -->
-              <div class="col-4 event-item">
+              <div class="col-3 event-item">
                 <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
                 <div class="event-item-information-section">
                   <div class="event-item-title-section">Title Example</div>
@@ -104,7 +105,18 @@
               <!-- ! [event item] -->
 
               <!-- event item -->
-              <div class="col-4 event-item">
+              <div class="col-3 event-item">
+                <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
+                <div class="event-item-information-section">
+                  <div class="event-item-title-section">Title Example</div>
+                  <div class="event-item-date-section">June 11, 2019</div>
+                  <div class="event-item-description-section"><p>This is a short, sometimes cut off description of the event that will be determined where it will be cut off at a little time maybe...</p></div>
+                </div>
+              </div>
+              <!-- ! [event item] -->
+
+              <!-- event item -->
+              <div class="col-3 event-item">
                 <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
                 <div class="event-item-information-section">
                   <div class="event-item-title-section">Title Example</div>
@@ -182,29 +194,6 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $('.preloader').fadeOut('slow');
-     $('#wrapper').fadeIn();
-
-     $("#mobile_symbol").click(function() {
-       if($("#mobile_menu_list").is(":visible"))
-       {
-         $("#mobile_menu_list").hide(300);
-       }
-       else {
-         $("#mobile_menu_list").show(300);
-       }
-     });
-   });
-
-  $(window).scroll(function() {
-    if ( $(window).scrollTop() >= 80 ) {
-        $('#navigation-container').css("height", "70px");
-    } else {
-        $('#navigation-container').css("height", "0px");
-    }
-  });
-  </script>
+  <script src="/assets/js/global.js"></script>
   </body>
 </html>

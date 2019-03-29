@@ -1,12 +1,5 @@
 /* = Import = */
-@font-face {font-family: "NexaW01-Black";
-    src: url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.eot"); /* IE9*/
-    src: url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.woff2") format("woff2"), /* chrome firefox */
-    url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.woff") format("woff"), /* chrome firefox */
-    url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("https://db.onlinewebfonts.com/t/cb3bb192300d6a868fec9a0dbedf6c50.svg#NexaW01-Black") format("svg"); /* iOS 4.1- */
-}
+@import url('fonts.css');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 * {
@@ -18,6 +11,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  word-break: break-all;
 }
 
 [class*="col-"] {
@@ -151,7 +145,7 @@ video {
 }
 
 a.title {
-  font-family: "NexaW01-Black";
+  font-family: "Nexa";
   font-size: 30px;
   color: #000000;
   text-decoration: none;
@@ -169,6 +163,7 @@ a.title {
   margin: 0 10px;
   font-family: "Playfair Display", serif;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .navigation-list-item a:hover {
@@ -181,105 +176,6 @@ a.title {
   height: 400px;
   position: relative;
   background: linear-gradient(rgba(249, 226, 132, 0.7) 0%, rgba(244, 174, 143, 0.75) 100%);
-}
-
-.hero-section {
-  overflow: hidden;
-  display: block;
-}
-
-.spacer-section {
-  margin: 50px 0;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.spacer-section.one {
-  background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('http://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
-}
-
-.trending-events, .about-us {
-  padding: 30px;
-}
-
-.hero-text, .spacer-text {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 30%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.one .spacer-text {
-  left: 20%;
-}
-
-.hero-text p, .spacer-text p {
-  font-size: 8vw;
-  font-family: "NexaW01-Black";
-  font-style: italic;
-  color: #ffffff;
-}
-
-.one .spacer-text p {
-  font-size: 6vw;
-}
-
-.event-list {
-  margin: 50px 0;
-}
-
-.event-item {
-  padding: 10px;
-}
-
-.event-item-image-section {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.event-item-image-section img {
-  width: 200px;
-}
-
-.event-item-information-section {
-  text-align: center;
-  margin: 10px 0;
-}
-
-.event-item-title-section {
-  font-family: "NexaW01-Black";
-}
-
-.event-item-date-section, .event-item-description-section {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.event-item-description-section {
-  width: 80%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.about-us {
-}
-
-.about-us-content {
-  padding: 10px;
-  margin-bottom: 50px;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-us-content p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  text-align: left;
 }
 
 .footer {
@@ -343,10 +239,6 @@ a.title {
 
   .navigation-list {
     display: none;
-  }
-
-  .about-us-content {
-    width: 80%;
   }
 
   .footer {

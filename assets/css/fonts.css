@@ -1,0 +1,8 @@
+@font-face {font-family: "Nexa";
+    src: url("fonts/Nexa.eot"); /* IE9*/
+    src: url("fonts/Nexa.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/Nexa.woff2") format("woff2"), /* chrome firefox */
+    url("fonts/Nexa.woff") format("woff"), /* chrome firefox */
+    url("fonts/Nexa.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("fonts/Nexa.svg#NexaW01-Black") format("svg"); /* iOS 4.1- */
+}
