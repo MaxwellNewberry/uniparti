@@ -138,7 +138,7 @@ video {
 }
 
 .underline {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #f9e284 0%, #f4ae8f 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -180,7 +180,7 @@ a.title {
 .hero-section, .spacer-section {
   height: 400px;
   position: relative;
-  background: linear-gradient(120deg, rgba(132, 250, 176, 0.7) 0%, rgba(143, 211, 244, 0.75) 100%);
+  background: linear-gradient(rgba(249, 226, 132, 0.7) 0%, rgba(244, 174, 143, 0.75) 100%);
 }
 
 .hero-section {
@@ -196,7 +196,7 @@ a.title {
 }
 
 .spacer-section.one {
-  background: linear-gradient(120deg, rgba(132, 250, 176, 0.8) 0%, rgba(143, 211, 244, 0.85) 100%), url('http://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('http://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
 }
 
 .trending-events, .about-us {
@@ -302,7 +302,7 @@ a.title {
 }
 
 .footer .social-links a:hover {
-  color: #8fd3f4;
+  color: #f4ae8f;
 }
 
 .footer .copyright {
