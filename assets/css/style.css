@@ -200,7 +200,6 @@ a.title {
   font-family: "NexaW01-Black";
   font-style: italic;
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .one .spacer-text p {
@@ -233,10 +232,16 @@ a.title {
   font-family: "NexaW01-Black";
 }
 
-.event-item-date-section {
+.event-item-date-section, .event-item-description-section {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-style: italic;
+}
+
+.event-item-description-section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .about-us {
