@@ -1,0 +1,288 @@
+/* = Import = */
+@import url('https://db.onlinewebfonts.com/c/cb3bb192300d6a868fec9a0dbedf6c50?family=NexaW01-Black');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	filter: opacity(30%);
+	overflow: hidden;
+	z-index: -1;
+  display: inline-block;
+  vertical-align: baseline
+}
+
+.col-12 {
+  z-index: 1;
+}
+
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.navigation-container {
+  width: 100%;
+  background: #fafafa;
+  position: fixed;
+  z-index: 100;
+  height: 0;
+}
+
+.mobile-menu {
+	/* Position */
+	position: fixed;
+	width: 100%;
+	cursor: pointer;
+	z-index: 101;
+	/* Style */
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #000000;
+}
+
+.mobile_menu_list {
+	/* Position */
+	position: relative;
+	display: none;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	z-index: 100;
+	/* Style*/
+	background-color: #FFFFFF;
+}
+
+.mobile_menu_list>li {
+	/* Position */
+	padding: 5px;
+	list-style-type: none;
+}
+
+.mobile_menu_list>li a {
+	/* Position */
+	display: block;
+	margin: 30px;
+	/* Style */
+	text-decoration: none;
+	color: #000000;
+}
+
+.mobile_menu_list>li:hover {
+	/* Style */
+	background-color: #FAFAFA;
+}
+
+.mobile_symbol {
+	/* Position */
+	position: absolute;
+	display: none;
+	padding: 15px 30px;
+	right: 0;
+	z-index: 1001;
+}
+
+.brand-section {
+  padding: 15px;
+}
+
+.underline {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  padding: 5px 5px 0 5px;
+}
+
+.underline:hover {
+  background-size: 100% 88%;
+}
+
+a.title {
+  font-family: "NexaW01-Black";
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-list {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.navigation-list>.navigation-list-item {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.navigation-list-item a:hover {
+  padding-bottom: 2px;
+  transition: 0.25s ease-in;
+  border-bottom: 1px solid black;
+}
+
+.hero-section, .spacer-section {
+  height: 300px;
+  position: relative;
+  background: linear-gradient(120deg, rgba(132, 250, 176, 0.9) 0%, rgba(143, 211, 244, 0.95) 100%), url('img/hero.jpg') center center / cover no-repeat;
+}
+
+.spacer-section {
+  margin: 50px 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.spacer-section.one {
+  background: linear-gradient(120deg, rgba(132, 250, 176, 0.7) 0%, rgba(143, 211, 244, 0.75) 100%);
+}
+
+.trending-events, .about-us {
+  padding: 30px;
+}
+
+.hero-text, .spacer-text {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.one .spacer-text {
+  left: 20%;
+}
+
+.hero-text p, .spacer-text p {
+  font-size: 8vw;
+  font-family: "NexaW01-Black";
+  font-style: italic;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.one .spacer-text p {
+  font-size: 6vw;
+}
+
+.event-list {
+  margin: 50px 0;
+}
+
+.event-item {
+  padding: 10px;
+}
+
+.event-item-image-section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-item-image-section img {
+  width: 200px;
+}
+
+.event-item-information-section {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.event-item-title-section {
+  font-family: "NexaW01-Black";
+}
+
+.event-item-date-section {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.about-us {
+}
+
+.about-us-content {
+  padding: 10px;
+  margin-bottom: 50px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
+
+/* = Mobile = */
+
+@media only screen and (max-width: 768px) {
+
+  .mobile_symbol {
+		/* Position */
+		display: block;
+	}
+
+  .navigation-list {
+    display: none;
+  }
+
+  .about-us-content {
+    width: 80%;
+  }
+
+}

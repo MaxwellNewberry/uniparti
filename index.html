@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- title -->
+    <title>uniparti [home]</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="UniParti is a community-reliant event website that provides all the latest and upcoming events in your area.">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- preloader -->
+    <div class="pre-loader"></div>
+
+    <div class="navigation-container" id="navigation-container">
+      <div class="col-12">
+        <div class="col-4">
+          <div class="brand-section">
+            <a href="" class="title underline">uniparti</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <ul class="navigation-list">
+            <li class="navigation-list-item"><a href="">home</a></li>
+            <li class="navigation-list-item"><a href="">events</a></li>
+            <li class="navigation-list-item"><a href="">about us</a></li>
+            <li class="navigation-list-item"><a href="">news</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div id="mobile_symbol" class="mobile_symbol"><i class="fas fa-bars"></i></div>
+
+      <!-- Mobile Menu List -->
+      <ul id="mobile_menu_list" class="mobile_menu_list">
+        <li><a href="">home</a></li>
+        <li><a href="">events</a></li>
+        <li><a href="">about us</a></li>
+        <li><a href="">news</a></li>
+      </ul>
+      <!-- ! -->
+    </div>
+    <!-- ! -->
+
+    <div class="wrapper">
+
+      <!-- hero -->
+      <div class="col-12">
+        <div class="hero-section">
+          <div class="hero-text">
+            <p>let's party</p>
+          </div>
+        </div>
+      </div>
+      <!-- ! -->
+
+      <!-- trending events -->
+      <div class="col-12">
+        <div class="trending-events">
+          <!-- heading -->
+          <div class="col-12">
+            <div class="heading"><span class="underline">trending events</span></div>
+          </div>
+          <!-- ! -->
+
+          <!-- events -->
+          <div class="col-12">
+            <div class="event-list">
+
+              <!-- event item -->
+              <div class="col-4 event-item">
+                <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
+                <div class="event-item-information-section">
+                  <div class="event-item-title-section">Title Example</div>
+                  <div class="event-item-date-section">June 11, 2019</div>
+                </div>
+              </div>
+              <!-- ! -->
+
+              <!-- event item -->
+              <div class="col-4 event-item">
+                <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
+                <div class="event-item-information-section">
+                  <div class="event-item-title-section">Title Example</div>
+                  <div class="event-item-date-section">June 11, 2019</div>
+                </div>
+              </div>
+              <!-- ! -->
+
+              <!-- event item -->
+              <div class="col-4 event-item">
+                <div class="event-item-image-section"><img src="https://fpoimg.com/300x300?text=Advertisement" alt="placeholder" /></div>
+                <div class="event-item-information-section">
+                  <div class="event-item-title-section">Title Example</div>
+                  <div class="event-item-date-section">June 11, 2019</div>
+                </div>
+              </div>
+              <!-- ! -->
+
+            </div>
+          </div>
+          <!-- ! -->
+        </div>
+      </div>
+      <!-- ! -->
+
+      <!-- spacer -->
+      <div class="col-12">
+        <div class="spacer-section one">
+          <video playsinline autoplay muted loop>
+    			<source src="assets/css/video/spacer_one.mp4" type="video/mp4">
+    			</video>
+          <div class="spacer-text">
+            <p>thanks for joining us</p>
+          </div>
+        </div>
+      </div>
+      <!-- ! -->
+
+      <!-- about us -->
+      <div class="col-12">
+        <div class="about-us">
+          <!-- heading -->
+          <div class="col-12">
+            <div class="heading"><span class="underline">about us</span></div>
+          </div>
+          <!-- ! -->
+
+          <!-- about us content -->
+          <div class="col-12">
+            <div class="about-us-content">
+              <p>uniparti is an independent event hosting website that allows the community to post, share, and invite other users to their local events.</p>
+              <p>beyond sharing, our community has the ability to give away or sell tickets to their events, and even handle transactions right from uniparti.</p>
+            </div>
+          </div>
+          <!-- ! -->
+
+        </div>
+      </div>
+      <!-- ! -->
+
+    </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.preloader').fadeOut('slow');
+     $('#wrapper').fadeIn();
+
+     $("#mobile_symbol").click(function() {
+       if($("#mobile_menu_list").is(":visible"))
+       {
+         $("#mobile_menu_list").hide(300);
+       }
+       else {
+         $("#mobile_menu_list").show(300);
+       }
+     });
+   });
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() >= 80 ) {
+        $('#navigation-container').css("height", "70px");
+    } else {
+        $('#navigation-container').css("height", "0px");
+    }
+  });
+  </script>
+  </body>
+</html>
