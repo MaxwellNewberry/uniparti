@@ -63,7 +63,7 @@
         <div class="col-12">
           <ul class="event-categories">
             <label>categories:</label>
-            <li category="all" class="category underline">all</li>
+            <li category="all" class="category underline active">all</li>
             <li category="fundraiser" class="category underline">fundraiser</li>
             <li category="conference" class="category underline">conference</li>
             <li category="house-party" class="category underline">house party</li>
@@ -352,129 +352,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>var index_page = false;</script>
   <script src="../assets/js/global.js"></script>
-  <script>
-  $(document).ready(function(){pagination();});
-
-  // categories
-  $('.category').on('click', function() {
-
-    // Select category
-    var category = $(this).attr('category');
-    $(this).addClass('active');
-    $('.category').each(function() {
-      if($(this).attr('category') != category) {
-        $(this).removeClass('active');
-      }
-      else if($(this).attr('category') == category && $(this).hasClass('active')) {
-        return;
-      }
-    });
-
-    $('.event-item').each(function() {
-      $(this).css('display', 'block');
-    });
-
-    var i = 1;
-
-    if(category == "all") {
-
-      $('.event-item').each(function() {
-        $(this).css('display', 'block');
-      });
-
-    }
-
-    else {
-
-      $('.event-item').each(function() {
-
-        $(this).removeAttr('id');
-        var item_category = $(this).attr('category');
-        if(item_category != category) {
-          $(this).css('display', 'none');
-        }
-
-      });
-
-    }
-
-    $('.event-item').each(function() {
-
-      if($(this).is(':visible')) {
-        $(this).attr('id', 'event-item-' + i);
-        i++;
-      }
-
-    });
-
-    pagination();
-
-  });
-
-  function pagination() {
-
-    // Get number of event items
-    var event_items = $('.event-item:visible').length;
-
-    // Number of pages (= counts of 8 after first set of 8)
-    /* NOTE:
-        If num_pages = -1, then there is only 1 page.
-    */
-    var num_pages = (event_items / 8) - 1;
-
-    // Rest of variables
-    var curr_page = 1;
-    var curr_start = 0;
-    var curr_end = 8;
-    var x = 0;
-    var page = "";
-
-    // Hide items beyond first 8
-    for(x = 9; x <= event_items; x++) {
-      $('#event-item-' + x).css('display', 'none');
-    }
-
-    // Clear Pages
-    $('#pages').html('');
-
-    // First page for sure
-    $('#pages').append('<span id="page-1" page="1" class="page active">01</span>');
-
-    // Additional Pages
-    for(x = 0; x < num_pages; x++) {
-      page = (page < 10) ? '0' + (x + 2) : x + 2;
-      $('#pages').append('<span id="page-'+ (x + 2) +'" page="'+ (x + 2) +'" class="page">'+page+'</span>');
-    }
-
-    // Page Clicks
-    $('.page').on('click', function() {
-
-      // Change the page to
-      var change_page = $(this).attr('page');
-      $('#page-' + change_page).addClass('active');
-      $('#page-' + curr_page).removeClass('active');
-
-      if(change_page == curr_page) { return; }
-
-      // Hide current items
-      for(x = curr_start; x <= curr_end; x++) {
-        $('#event-item-' + x).css('display', 'none');
-      }
-
-      // Reset numbers
-      curr_end = (change_page * 8);
-      curr_start = curr_end - 7;
-
-      // Show new items
-      for(x = curr_start; x <= curr_end; x++) {
-        $('#event-item-' + x).fadeIn(600);
-      }
-
-      // Change the current page variable
-      curr_page = change_page;
-
-    });
-  }
-  </script>
+  <script src="../assets/js/events.js"></script>
   </body>
 </html>
