@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.preloader').fadeOut('slow');
-   $('#wrapper').fadeIn();
+   $('.wrapper').fadeIn();
    if(!index_page) { $('#navigation-container').css('height', '70px'); }
    $("#mobile_symbol").click(function() {
      if($("#mobile_menu_list").is(":visible"))

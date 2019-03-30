@@ -3,39 +3,8 @@
   display: block;
 }
 
-.spacer-section {
-  margin: 50px 0;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.spacer-section.one {
-  background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('https://theblacksheeponline.com/wp-content/uploads/2016/03/orangekrush-bg-3.jpg') center center / cover no-repeat;
-}
-
 .trending-events, .about-us {
   padding: 30px;
-}
-
-.hero-text, .spacer-text {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 30%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.one .spacer-text {
-  left: 20%;
-}
-
-.hero-text p, .spacer-text p {
-  font-size: 8vw;
-  font-family: "Nexa";
-  font-style: italic;
-  color: #ffffff;
 }
 
 .one .spacer-text p {
