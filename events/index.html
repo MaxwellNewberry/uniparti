@@ -382,21 +382,21 @@
         $(this).css('display', 'block');
       });
 
-      pagination();
-
-      return;
-
     }
 
-    $('.event-item').each(function() {
+    else {
 
-      $(this).removeAttr('id');
-      var item_category = $(this).attr('category');
-      if(item_category != category) {
-        $(this).css('display', 'none');
-      }
+      $('.event-item').each(function() {
 
-    });
+        $(this).removeAttr('id');
+        var item_category = $(this).attr('category');
+        if(item_category != category) {
+          $(this).css('display', 'none');
+        }
+
+      });
+
+    }
 
     $('.event-item').each(function() {
 
