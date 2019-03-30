@@ -358,10 +358,6 @@
   // categories
   $('.category').on('click', function() {
 
-    $('.event-item').each(function() {
-      $(this).css('display', 'block');
-    });
-
     // Select category
     var category = $(this).attr('category');
     $(this).addClass('active');
@@ -369,6 +365,13 @@
       if($(this).attr('category') != category) {
         $(this).removeClass('active');
       }
+      else if($(this).attr('category') == category && $(this).hasClass('active')) {
+        return;
+      }
+    });
+
+    $('.event-item').each(function() {
+      $(this).css('display', 'block');
     });
 
     var i = 1;
