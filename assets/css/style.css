@@ -226,6 +226,10 @@ a.title {
   background: linear-gradient(rgba(249, 226, 132, 0.8) 0%, rgba(244, 174, 143, 0.85) 100%), url('https://imagesvc.timeincapp.com/v3/fan/image?url=https://writingillini.com/wp-content/uploads/getty-images/2018/01/845798050-college-football-sep-09-western-kentucky-at-illinois.jpg.jpg&w=4800') center center / cover no-repeat;
 }
 
+.spacer-section.two .spacer-text {
+  left: 20%;
+}
+
 .hero-text, .spacer-text {
   position: absolute;
   margin: 0;
