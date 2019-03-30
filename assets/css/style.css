@@ -75,6 +75,19 @@ video {
   height: 0;
 }
 
+.brand-section .logo {
+  width: 30px;
+  height: 30px;
+  background: url('img/logo.png') center bottom / 80% no-repeat;
+  margin: 0 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.brand-section .logo:hover {
+  background: url('img/logo-hover.png') center bottom / 80% no-repeat;
+}
+
 .mobile-menu {
 	/* Position */
 	position: fixed;
