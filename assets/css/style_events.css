@@ -4,21 +4,65 @@
 
 .wrapper>.col-10 {
   margin: 0 auto;
+  overflow: hidden;
   float: none;
 }
 
 .event-item {
   padding: 10px;
+  display: block;
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.fadeOut {
+  display: none;
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity:0 ;}
 }
 
 .event-item-image-section {
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  width: 200px;
+  height: 200px;
 }
 
-.event-item-image-section img {
-  width: 200px;
+.event-item-auto-generated {
+  background: #f7f7f7;
+  display: inline-block;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 3px;
+  font-family: "Playfair Display", serif;
+  font-size: 8px;
+  font-style: italic;
+  opacity: 0.98;
 }
+
+
 
 .event-item-information-section {
   text-align: center;
@@ -27,9 +71,10 @@
 
 .event-item-title-section {
   width: 80%;
+  overflow: hidden;
   margin: 0 auto;
   font-family: "Nexa";
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .event-item-date-section, .event-item-description-section {
@@ -101,8 +146,17 @@
 
 @media only screen and (max-width: 900px) {
 
-  .event-item-image-section img {
-    width: 200px;
+
+
+  .event-item {
+    min-height: 0;
+  }
+
+  .wrapper>.col-10 {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    float: left;
   }
 
 }

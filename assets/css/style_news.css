@@ -1,0 +1,63 @@
+.wrapper {
+  padding-top: 90px;
+}
+
+.wrapper>.col-10 {
+  margin: 0 auto;
+  float: none;
+}
+
+.content h1 {
+  font-family: "Nexa";
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.content h3 {
+  font-family: "Nexa";
+  margin: 20px 0 0 0;
+}
+
+.content .col-10 {
+  margin: 0 auto;
+  float: none;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.content .col-10 p {
+  margin: 15px 0;
+}
+
+.sub-heading {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.inner.spacer {
+  height: 150px;
+  margin: 50px 0;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://us.123rf.com/450wm/martialred/martialred1609/martialred160900014/62747901-airpods-wireless-headphones-thin-line-art-icon-for-apps-and-websites.jpg?ver=6') center center / 5% repeat;
+}
+
+.spacer-section {
+  margin: 50px 0 0 0;
+  height: 200px;
+}
+
+.spacer-section p {
+  font-size: 6vw;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .content .col-10 {
+    margin: 0;
+    padding: 15px;
+    float: left;
+  }
+  
+}
